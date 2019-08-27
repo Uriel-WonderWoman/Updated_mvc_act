@@ -12,6 +12,7 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
+- task: SonarQubePostTest@1
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
